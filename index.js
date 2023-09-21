@@ -23,7 +23,7 @@ app.use(cors());
 app.use('/auth', AuthRoutes);
 app.use('/protected', Protected);
 
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   console.error(err.stack);
   res.status(500).json({ error: 'Internal Server Error' });
 });
@@ -31,3 +31,5 @@ const port = PORT || 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+
+export default app;

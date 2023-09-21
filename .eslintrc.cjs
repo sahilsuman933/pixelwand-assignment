@@ -19,5 +19,20 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    'import/extensions': [
+      'error',
+      'always',
+      {
+        js: 'always',
+        tsx: 'always',
+      },
+    ],
+    'no-underscore-dangle': [
+      'error',
+      {
+        allow: ['_id'],
+      },
+    ],
+  },
 };
