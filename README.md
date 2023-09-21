@@ -63,7 +63,7 @@ API Endpoints:
 **Description:** User logout endpoint.
 
 **Header:**
-```json
+```bash
 token: access-token
 ```
 
