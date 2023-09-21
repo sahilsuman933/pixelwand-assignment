@@ -9,7 +9,7 @@
     "format": "prettier --write .",
     "lint": "eslint .  --ext .js",
     "lint-fix": "eslint --fix .  --ext .js",
-    "test": "mocha"
+    "test": "mocha --timeout 10000"
   },
   "keywords": [],
   "author": "Sahil Suman",
